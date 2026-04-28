@@ -11,8 +11,8 @@ def merge(left, right):
         else:
             merged.append(right[j])
             j += 1
-    merged += left[i:]
-    merged += right[j:]
+    merged.extend(left[i:])
+    merged.extend(right[j:])
     print(f"merged: {merged}")
     return merged
 
@@ -30,13 +30,13 @@ def mergesort(arr):
 
 if __name__ == "__main__":
     print("Enter numbers, separated by ',':", end=" ")
-    input_str = input().strip()
-    input_list = input_str.split(",")
+    s = input().strip()
+    input_list = s.split(",")
     input_list = [x.strip() for x in input_list]
     print(f"input_list: {input_list}")
 
-    value_list = [int(num) for num in input_list]
+    value_list = [int(x) for x in input_list]
     print(f"value_list: {value_list}")
 
-    sorted_arr = mergesort(value_list)
-    print(sorted_arr)
+    result = mergesort(value_list)
+    print(result)
