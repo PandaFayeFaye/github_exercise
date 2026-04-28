@@ -1,0 +1,12 @@
+diff --git a/hello_world.py b/hello_world.py
+index f1a1813..27ee5c2 100644
+--- a/hello_world.py
++++ b/hello_world.py
+@@ -1 +1,7 @@
+ print("Hello world!")
++print("Not another hello world")
++print("No")
++print("More")
++print("Hello")
++print("World")
++print("Please, I'm begging you")
