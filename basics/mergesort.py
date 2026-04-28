@@ -15,9 +15,9 @@ def merge(a, b):
 
 
 def msort(arr):
+    print("array:", arr)
     if len(arr) <= 1:
         return arr
-    print("array:", arr)
     m = len(arr) // 2
     print("m:", m)
     left = msort(arr[:m])
